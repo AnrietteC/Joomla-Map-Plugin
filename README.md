@@ -6,3 +6,4 @@ A plugin that facilitates easy inclusion of Google Maps into any content piece.
 
 ## Compatibility
 * Joomla 3.6.x
+* Google Maps API v3
