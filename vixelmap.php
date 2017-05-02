@@ -98,7 +98,7 @@ HTML;
 							$width = !$width ? $this->params->get( 'default_width_js' ) : $width;
 							$height = !$height ? $this->params->get( 'default_height_js' ) : $height;
 
-							$zoom = 4;
+							$zoom = $this->params->get( 'default_zoom_js', 4 );
 							if ( preg_match( '/zoom="(.*?)"/', $match, $match_zoom ) ) {
 								$zoom = isset( $match_zoom[ 1 ] ) ? $match_zoom[ 1 ] : null;
 							}
@@ -132,7 +132,7 @@ HTML;
 								$map_init_object->center  = $center_point_object;
 								$marker_object->position  = $center_point_object;
 							} else {
-								JLog::add( 'Vixel Map: FAILED (No center point coordinates)', JLog::WARNING, 'vixel' );
+								JLog::add( 'Vixel Map: FAILED (No lat/long coordinates)', JLog::WARNING, 'vixel' );
 
 								return false;
 							}
