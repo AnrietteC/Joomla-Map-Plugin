@@ -36,6 +36,7 @@
 
                 <field name="default_width_js" label="VIXELMAP_LBL_DEFAULTWIDTH" type="text" description="VIXELMAP_DESC_DEFAULTWIDTH" />
                 <field name="default_height_js" label="VIXELMAP_LBL_DEFAULTHEIGHT" type="text" description="VIXELMAP_DESC_DEFAULTHEIGHT" />
+                <field name="default_zoom_js" label="VIXELMAP_LBL_DEFAULTZOOM" type="text" description="VIXELMAP_DESC_DEFAULTZOOM" />
 
             </fieldset>
         </fields>
